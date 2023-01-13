@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C58E469A-15FB-4EFA-921A-CA83A1D284F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4C5C0690-A00A-45AF-A926-DF914A4A3AE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoTunisia.MVC", "src\CryptoTunisia.MVC\CryptoTunisia.MVC.csproj", "{A8B645A2-5638-4D15-8C23-5913E2D35F3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoTunisia.UnitTests", "test\CryptoTunisia.UnitTests\CryptoTunisia.UnitTests.csproj", "{C3687AD6-6615-4AF3-8917-B064340925DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8B645A2-5638-4D15-8C23-5913E2D35F3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B645A2-5638-4D15-8C23-5913E2D35F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B645A2-5638-4D15-8C23-5913E2D35F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B645A2-5638-4D15-8C23-5913E2D35F3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3687AD6-6615-4AF3-8917-B064340925DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3687AD6-6615-4AF3-8917-B064340925DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3687AD6-6615-4AF3-8917-B064340925DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3687AD6-6615-4AF3-8917-B064340925DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8B645A2-5638-4D15-8C23-5913E2D35F3F} = {C58E469A-15FB-4EFA-921A-CA83A1D284F0}
+		{C3687AD6-6615-4AF3-8917-B064340925DC} = {4C5C0690-A00A-45AF-A926-DF914A4A3AE4}
+	EndGlobalSection
+EndGlobal
