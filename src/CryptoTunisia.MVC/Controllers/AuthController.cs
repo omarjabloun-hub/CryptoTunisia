@@ -9,19 +9,20 @@ public class AuthController : Controller
     {
         return View();
     }
-    
-    // Login 
+
+    // Login
     public IActionResult Login()
     {
-        return View();
+
+    return View();
     }
-    
+
     // Register
     public IActionResult Register()
     {
         return View();
     }
-    
+
     // Logout
     public IActionResult Logout()
     {
