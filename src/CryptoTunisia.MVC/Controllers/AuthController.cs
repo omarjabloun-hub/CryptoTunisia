@@ -22,9 +22,10 @@ public class AuthController : Controller
     
     // Login 
     [AllowAnonymous]
+    [HttpPost]
     public IActionResult Login(UserLoginDto userDto)
     {
-        var user = _userRepository.GetUserByUserName(userDto.Username);
+        var user = _userRepository.GetUserByEmail(userDto.Email);
         if (user == null)
         {
             return NotFound();
@@ -33,9 +34,17 @@ public class AuthController : Controller
         {
             return Unauthorized();
         }
-        return View();
+        return RedirectToAction(actionName: "Index" 
+            , controllerName: "Home");
     }
     
+    [AllowAnonymous]
+    [HttpGet]
+    public IActionResult Login()
+    {
+        return View();
+    }
+
     // Register
     [AllowAnonymous]
     [HttpPost]
@@ -67,7 +76,7 @@ public class AuthController : Controller
     {
         return View();
     }
-    
+
     // Logout
     public IActionResult Logout()
     {

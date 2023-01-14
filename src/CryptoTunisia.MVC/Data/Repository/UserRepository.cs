@@ -6,6 +6,7 @@ namespace CryptoTunisia.MVC.Data.Repository;
 public interface IUserRepository : IRepository<User>
 {
     public User GetUserByUserName(string userName);
+    public User GetUserByEmail(string email);
 }
 public class UserRepository : IUserRepository
 {
@@ -33,6 +34,13 @@ public class UserRepository : IUserRepository
         var user = _context.Users.SingleOrDefault(user => user.UserName == userName);
         return  user;
     }
+
+    public User GetUserByEmail(string email)
+    {
+        var user = _context.Users.SingleOrDefault(user => user.Email == email);
+        return  user;
+    }
+
 
     public void Add(User entity)
     {

@@ -23,49 +23,20 @@ namespace CryptoTunisia.MVC.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<double>("AvailableSupply")
-                        .HasColumnType("REAL");
-
-                    b.Property<DateTime>("LastUpdated")
-                        .HasColumnType("TEXT");
-
                     b.Property<double>("MarketCap")
-                        .HasColumnType("REAL");
-
-                    b.Property<double>("MaxSupply")
                         .HasColumnType("REAL");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<double>("PercentChange1H")
-                        .HasColumnType("REAL");
-
                     b.Property<double>("PercentChange24H")
-                        .HasColumnType("REAL");
-
-                    b.Property<double>("PercentChange7D")
                         .HasColumnType("REAL");
 
                     b.Property<double>("Price")
                         .HasColumnType("REAL");
 
-                    b.Property<int>("Rank")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Slug")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Symbol")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<double>("TotalSupply")
-                        .HasColumnType("REAL");
-
-                    b.Property<double>("Volume24H")
+                    b.Property<double>("Volume")
                         .HasColumnType("REAL");
 
                     b.HasKey("Id");
